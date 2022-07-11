@@ -33,7 +33,7 @@ class ExpressDoc extends e {
 
     this.spec = jsdocParser({
       swaggerDefinition: this.openAPIDefinition,
-      apis: conf?.apiPaths ? conf?.apiPaths !== undefined : ["*.js"] // paths to files with comments to be parsed
+      apis: conf?.apiPaths ? conf?.apiPaths : ["*.js"] // paths to files with comments to be parsed
     });
 
     this.opts = conf?.SwaggerUiOptions ? conf?.SwaggerUiOptions : {
