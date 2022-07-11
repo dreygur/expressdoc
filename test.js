@@ -1,4 +1,4 @@
-const ExpressDoc = require('./index');
+const ExpressDoc = require('expressdoc');
 
 const a = new ExpressDoc({
   title: "Test Documentation",
