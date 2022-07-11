@@ -1,7 +1,6 @@
 const jsdocParser = require("jsdoc-openapi");
 const e = require("express");
 const swaggerUi = require("./swagger");
-const { json, raw, text, application, request, response, static, urlencoded, query, Router, RouterOptions } = e;
 
 /**
  * EcpressDoc Class

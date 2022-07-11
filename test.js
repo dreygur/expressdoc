@@ -1,6 +1,8 @@
 const ExpressDoc = require('expressdoc');
+const { Router } = require('expressdoc');
+const r = Router();
 
-const a = new ExpressDoc({
+const app = new ExpressDoc({
   title: "Test Documentation",
   version: "5.0.1",
 });
@@ -10,7 +12,7 @@ const a = new ExpressDoc({
  * @description Get a "hello world" message.
  * @response {string} 200 - hello world.
  */
-a.get("/hello", async (req, res) => {
+app.get("/hello", async (req, res) => {
   return res.status(200).send({
     res: "hello world"
   });
@@ -21,12 +23,20 @@ a.get("/hello", async (req, res) => {
  * @description Blank Page.
  * @response {string} 200.
  */
-a.get("/", async (req, res) => {
+app.get("/", async (req, res) => {
   return res.status(200).send({
     res: "hello world"
   });
 });
 
-a.listen(3000, () => {
+r.get("/mutu", async (req, res) => {
+  return res.status(200).send({
+    res: "hello world"
+  });
+})
+
+app.use(r);
+
+app.listen(3000, () => {
   console.log('serving 3000');
 });
