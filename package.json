@@ -1,0 +1,39 @@
+{
+  "name": "expressdoc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Express rest api docs with Swagger UI",
+  "keywords": [
+    "swagger",
+    "express",
+    "ui",
+    "json",
+    "documentation"
+  ],
+  "private": false,
+  "author": {
+    "name": "Rakibul Yeasin",
+    "email": "ryeasin03@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreygur/expressdoc.git"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nodemon test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/dreygur/expressdoc/issues"
+  },
+  "homepage": "https://github.com/dreygur/expressdoc",
+  "dependencies": {
+    "jsdoc-openapi": "^0.0.7",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
