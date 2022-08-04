@@ -1,11 +1,13 @@
-const ExpressDoc = require('expressdoc');
-const { Router } = require('expressdoc');
+const express = require('expressdoc');
+const { Router, ExpressDoc } = require('expressdoc');
 const r = Router();
 
-const app = new ExpressDoc({
-  title: "Test Documentation",
-  version: "5.0.1",
-});
+// const app = new ExpressDoc({
+//   title: "Test Documentation",
+//   version: "5.0.1",
+// });
+
+const app = express();
 
 /**
  * GET /hello
