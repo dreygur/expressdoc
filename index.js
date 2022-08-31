@@ -60,9 +60,9 @@ class ExpressDoc extends e {
  * @param {Object} SwaggerUiOptions
  * @returns ExpressDoc Object
  */
-function expressDoc(title, version, apiPath, docPath, SwaggerUiOptions) {
+function expressDoc(title, version, apiPaths, docPath, SwaggerUiOptions) {
   return new ExpressDoc({
-    title, version, apiPath, docPath, SwaggerUiOptions
+    title, version, apiPaths, docPath, SwaggerUiOptions
   })
 };
 
