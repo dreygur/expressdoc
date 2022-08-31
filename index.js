@@ -1,7 +1,6 @@
 const jsdocParser = require("jsdoc-openapi");
 const e = require("express");
 const swaggerUi = require("./swagger");
-const { Router } = require('express');
 
 /**
  * ExpressDoc Class
@@ -10,7 +9,7 @@ const { Router } = require('express');
  * conf:
  *    title
  *    version
- *    apiPath
+ *    apiPaths
  *    docPath
  *    SwaggerUiOptions
  * @return {Object} Express instance
@@ -63,7 +62,7 @@ class ExpressDoc extends e {
 function expressDoc(title, version, apiPaths, docPath, SwaggerUiOptions) {
   return new ExpressDoc({
     title, version, apiPaths, docPath, SwaggerUiOptions
-  })
+  });
 };
 
 // Export
@@ -71,4 +70,4 @@ module.exports = expressDoc;
 module.exports.ExpressDoc = ExpressDoc;
 Object.keys(e).forEach(i => {
   module.exports[i] = e[i];
-})
+});

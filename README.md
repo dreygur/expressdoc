@@ -6,10 +6,10 @@
 ```javascript
 const { ExpressDoc } = require('expressdoc');
 const app = new ExpressDoc({
-  title: "Test Documentation", // Ttitle of the app or for documentation page
+  title: "Documentation", // Title of the app or for documentation page
   version: "5.0.1", // App version
   docPath: "/doc", // Documentation PATH
-  apiPath: "./routes", // PATH to the files where api is implemented
+  apiPaths: ["./routes"], // PATH locations to the files where api is implemented
   SwaggerUiOptions // Options for Swagger UI
 });
 ```
