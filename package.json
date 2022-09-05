@@ -23,7 +23,7 @@
   "readmeFilename": "README.md",
   "scripts": {
     "start": "node index.js",
-    "test": "nodemon test.js"
+    "test": "jest ./tests --detectOpenHandles"
   },
   "bugs": {
     "url": "https://github.com/dreygur/expressdoc/issues"
@@ -35,6 +35,7 @@
     "swagger-ui-dist": "^4.12.0"
   },
   "devDependencies": {
+    "jest": "^29.0.2",
     "nodemon": "^2.0.19"
   }
 }
